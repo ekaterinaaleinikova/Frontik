@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test", "test\test.csproj", "{70B35F9B-1EA3-475D-B2C9-42776D3D2FB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fronti", "fronti\fronti.csproj", "{C26BB3E1-92D4-47BE-A750-920597B4A290}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70B35F9B-1EA3-475D-B2C9-42776D3D2FB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70B35F9B-1EA3-475D-B2C9-42776D3D2FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70B35F9B-1EA3-475D-B2C9-42776D3D2FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70B35F9B-1EA3-475D-B2C9-42776D3D2FB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C26BB3E1-92D4-47BE-A750-920597B4A290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C26BB3E1-92D4-47BE-A750-920597B4A290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C26BB3E1-92D4-47BE-A750-920597B4A290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C26BB3E1-92D4-47BE-A750-920597B4A290}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE736E9F-61E2-48B1-A078-7D6070D58DFC}
+	EndGlobalSection
+EndGlobal

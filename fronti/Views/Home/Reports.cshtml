@@ -1,0 +1,75 @@
+﻿@using test.Models
+@model List<Employee>
+
+<body>
+<h2>Отчеты по сотрудникам</h2>
+
+<h1>Список сотрудников</h1>
+    <table>
+        <tr>
+            <th>Айди сотрудника</th>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Отчество</th>
+            <th>Дата найма</th>
+            <th>Зарплата</th>
+            <th>Количество дней на отпуск</th>
+            <th>Номер отдела</th>
+            <th>Работает ли сейчас?</th>
+            <th>Может ли идти в отпуск?</th>
+            <th>Email</th>
+            <th>Пароль</th>
+        </tr>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Lastname</td>
+                    <td>@item.FatherName</td>
+                    <td>@item.DateOfHire</td>
+                    <td>@item.Salary</td>
+                    <td>@item.NumberOfDaysOnLeave</td>
+                    <td>@item.DepartmentId</td>
+                    <td>@item.IsCurrentlyEmployed</td>
+                    <td>@item.CanGoOnVacation</td>
+                    <td>@item.Email</td>
+                    <td>@item.Password</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+@*<h1>Остаток по отпускам</h1>
+    <table>
+        <tr>
+            <th>ФИО</th>
+            <th>Должность</th>
+            <th>Дата принятия на работу</th>
+            <th>Остаток не использованных дней отпуска</th>
+        </tr>
+    </table>*@
+</body>
+
+
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+

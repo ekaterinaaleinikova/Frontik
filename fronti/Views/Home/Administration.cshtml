@@ -1,0 +1,70 @@
+﻿@using test.Models
+@model List<Employee>
+<body>
+    <h1>Панель администратора</h1>
+
+    <h1>Список сотрудников</h1>
+    <div>
+        <div class="menu-item">
+            <a href="/vacation-requests">Заявки на отпуск</a>
+        </div>
+    </div>
+
+    <h2>Список сотрудников</h2>
+    <table>
+        <tr>
+           
+            <th>Айди сотрудника</th>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Отчество</th>
+            <th>Дата найма</th>
+            <th>Зарплата</th>
+            <th>Количество дней на отпуск</th>
+            <th>Номер отдела</th>
+            <th>Работает ли сейчас?</th>
+            <th>Может ли идти в отпуск?</th>
+            <th>Email</th>
+            <th>Пароль</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Lastname</td>
+                <td>@item.FatherName</td>
+                <td>@item.DateOfHire</td>
+                <td>@item.Salary</td>
+                <td>@item.NumberOfDaysOnLeave</td>
+                <td>@item.DepartmentId</td>
+                <td>@item.IsCurrentlyEmployed</td>
+                <td>@item.CanGoOnVacation</td>
+                <td>@item.Email</td>
+                <td>@item.Password</td>
+            </tr>
+        }
+    </table>
+    <br />
+    <a href="/generate-document/1" class="button">Сформировать документ</a>
+    <a href="/send-email/1" class="button">Отправить уведомление</a>
+    <a href="/dismiss/1" class="button button-danger">Уволить</a>
+
+    <br />
+    <h2>Заявки на отпуск</h2>
+    <table>
+        <tr>
+            <th>Сотрудник</th>
+            <th>Дата подачи заявки</th>
+            <th>Вид отпуска</th>
+            <th>Статус</th>
+            <th>Действия</th>
+        </tr>
+    </table>
+    <br />
+    <a href="/approve-vacation/1" class="button">Согласовать</a>
+    <a href="/reject-vacation/1" class="button button-danger">Отклонить</a>
+</body>
+
+
+
